@@ -9,6 +9,7 @@ header {
   width: 100%;
   background-color: #ffffff;
   z-index: 1;
+  overflow: hidden;
 }
 .header-inner {
   display: flex;
@@ -81,7 +82,57 @@ header {
   padding: 6px 33px;
   border-radius: 4px;
 }
+
+/* main */
 main {
   height: 5000px;
-  background-color: #000000;
+  background-color: #eeeeee;
+}
+
+/* footer */
+footer {
+  background-color: #251327;
+  font-size: 15px;
+  color: #ffffff;
+}
+footer a {
+  display: inline-block;
+  color: #ffffff;
+}
+.footer-inner {
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 48px 0;
+  overflow: hidden;
+}
+.footer-inner > .logo {
+  width: 64px;
+  margin-bottom: 24px;
+}
+.footer-con-wrap1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+.footer-con-wrap1 > .txt-wrap > div:first-child {
+  margin-bottom: 12px;
+}
+.footer-con-wrap1 > .icon-wrap {
+  display: flex;
+  gap: 0 16px;
+}
+.footer-con-wrap1 > .icon-wrap > li > a > img {
+  width: 24px;
+  flex: none;
+}
+.footer-con-wrap2 {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-con-wrap2 > .txt-wrap {
+  display: flex;
+  gap: 0 36px;
 }
