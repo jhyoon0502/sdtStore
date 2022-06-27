@@ -1,0 +1,10 @@
+<svg id="SDT_symbol_puple_w" data-name="SDT symbol_puple_w" xmlns="http://www.w3.org/2000/svg" width="58" height="25" viewBox="0 0 58 25">
+  <rect id="bg" width="58" height="25" transform="translate(0)" fill="none"/>
+  <g id="logo" transform="translate(0 0.4)">
+    <path id="패스_4906" data-name="패스 4906" d="M1236.1,0V10.546h10.983V6.315h-6.728V0Z" transform="translate(-1191.785 0)" fill="#a31f34"/>
+    <path id="패스_4907" data-name="패스 4907" d="M2,176.166,0,179.4v1H20.157v-4.231Z" transform="translate(0 -169.851)" fill="#a31f34"/>
+    <path id="패스_4908" data-name="패스 4908" d="M0,367.148v4.231H15.9V373l-.616,1H0v4.231H18.158l2-3.234v-7.843Z" transform="translate(0 -353.987)" fill="#251327"/>
+    <path id="패스_4909" data-name="패스 4909" d="M1236.1,367.191v11.075h11.691l2-3.234v-1.994h-4.255l-.616,1h-4.565v-6.845Z" transform="translate(-1191.785 -354.028)" fill="#251327"/>
+    <path id="패스_4910" data-name="패스 4910" d="M622.285,11.544l.616-1h11.032V19.01l-.616,1H622.285ZM633.935,0V6.315h-13.9l-2,3.234V24.239H636.19l2-3.234V0Z" transform="translate(-595.877)" fill="#251327"/>
+  </g>
+</svg>
