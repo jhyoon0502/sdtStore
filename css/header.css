@@ -1,0 +1,79 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 48px;
+}
+.header-inner > .logo-wrap > img {
+  width: 58px;
+  flex: none;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0 56px;
+}
+.header-right > .language-wrap {
+  position: relative;
+  width: 168px;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+}
+.header-right > .language-wrap > .language-select {
+  position: relative;
+  padding: 5px 48px;
+  background: url(../images/header/language.svg) no-repeat 12px center;
+  cursor: pointer;
+}
+.header-right > .language-wrap > .language-select::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../images/header/arrow-down.svg) no-repeat center;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+.header-right > .language-wrap.on > .language-select::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../images/header/arrow-up.svg) no-repeat center;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+.header-right > .language-wrap > ul {
+  display: none;
+  position: absolute;
+  top: 32px;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+}
+.header-right > .language-wrap.on > ul {
+  display: block;
+}
+.header-right > .language-wrap > ul > li > a {
+  display: block;
+  padding: 5px 48px;
+}
+.header-right > .login {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #251327;
+  padding: 6px 33px;
+  border-radius: 4px;
+}
