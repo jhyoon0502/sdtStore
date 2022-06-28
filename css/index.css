@@ -23,7 +23,9 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked {
   background: url(../images/check-on.svg) no-repeat center / contain;
 }
-
+input[name="menu"]:checked + label {
+  font-weight: 500;
+}
 label {
   font-size: 14px;
   cursor: pointer;
@@ -63,23 +65,86 @@ main {
   padding: 0 24px;
 }
 .categody-wrap > .nav-category > ul > li {
-  padding: 11px 0;
+  padding-bottom: 11px 0;
+}
+.categody-wrap > .nav-category > ul > li:last-child > .cate-a {
+  border-bottom: none;
 }
 .categody-wrap > .nav-category > ul > li > .cate-a {
   position: relative;
+  color: #888888;
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 11px;
+  margin-top: 11px;
 }
 .categody-wrap > .nav-category > ul > li > .cate-a::after {
   content: "";
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
   width: 24px;
   height: 24px;
   background: url(../images/arrow-down.svg) no-repeat center / contain;
 }
+.categody-wrap > .nav-category > ul > li > .cate-a.on {
+  color: #251327;
+  font-weight: 500;
+}
 .categody-wrap > .nav-category > ul > li > .cate-a.on::after {
   background: url(../images/arrow-up.svg) no-repeat center / contain;
+}
+.categody-wrap > .nav-category > ul > li .sub-menu-wrap {
+  display: none;
+  padding: 24px 0;
+  border-bottom: 1px solid #dedede;
+}
+.categody-wrap
+  > .nav-category
+  > ul
+  > li
+  > .sub-menu-wrap
+  > .sub-menu-inner:first-child {
+  margin-bottom: 24px;
+}
+.categody-wrap
+  > .nav-category
+  > ul
+  > li
+  > .sub-menu-wrap
+  > .sub-menu-inner:last-child {
+  margin-bottom: 0;
+}
+.categody-wrap
+  > .nav-category
+  > ul
+  > li
+  > .sub-menu-wrap
+  > .sub-menu-inner
+  > .sub-menu-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.categody-wrap
+  > .nav-category
+  > ul
+  > li
+  > .sub-menu-wrap
+  > .sub-menu-inner
+  > ul
+  > li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+}
+.categody-wrap
+  > .nav-category
+  > ul
+  > li
+  > .sub-menu-wrap
+  > .sub-menu-inner
+  > ul
+  > li:last-child {
+  margin-bottom: 0;
 }
 
 /* go top */
