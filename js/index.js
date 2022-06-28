@@ -41,7 +41,7 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 window.addEventListener("scroll", function () {
-  if ($(this).scrollTop() > 500) {
+  if ($(this).scrollTop() > 200) {
     $(".go-top").fadeIn();
   } else {
     $(".go-top").fadeOut();

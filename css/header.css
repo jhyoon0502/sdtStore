@@ -77,3 +77,46 @@ header {
   padding: 6px 33px;
   border-radius: 4px;
 }
+.header-right > .my-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0 16px;
+}
+.header-right > .my-wrap > .my > a {
+  font-size: 14px;
+  color: #ffffff;
+  padding: 8px;
+  background-color: #251327;
+  border-radius: 50%;
+}
+.header-right > .my-wrap > .line {
+  width: 1px;
+  height: 16px;
+  background-color: #dedede;
+}
+.header-right > .my-wrap > .cart {
+  align-self: flex-end;
+}
+.header-right > .my-wrap > .cart > a {
+  position: relative;
+}
+.header-right > .my-wrap > .cart > a > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  box-sizing: border-box;
+  background-color: #a31f34;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -5px;
+}
+.header-right > .my-wrap > .cart > a > div > p {
+  font-size: 10px;
+  color: #ffffff;
+  text-align: center;
+}
