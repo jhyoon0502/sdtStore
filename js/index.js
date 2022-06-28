@@ -15,14 +15,14 @@ window.addEventListener("DOMContentLoaded", function () {
 
   const cateA = $(".cate-a");
   cateA.on("click", function () {
-    function slideDown(target) {
-      slideUp();
+    function listShow(target) {
+      listHide();
       $(target).addClass("on").next().show();
     }
-    function slideUp() {
+    function listHide() {
       $(".cate-a").removeClass("on").next().hide();
     }
-    $(this).hasClass("on") ? slideUp() : slideDown(this);
+    $(this).hasClass("on") ? listHide() : listShow(this);
 
     // $(this).toggleClass("on");
     // $(this).not($(this)).removeClass("on");
@@ -45,5 +45,14 @@ window.addEventListener("scroll", function () {
     $(".go-top").fadeIn();
   } else {
     $(".go-top").fadeOut();
+  }
+
+  const bannerHeight = $(".banner-wrap").outerHeight();
+  const scrollVal = $(this).scrollTop();
+
+  if (scrollVal > bannerHeight) {
+    $(".nav-category").css({ position: "fixed", top: "114px", width: "288px" });
+  } else {
+    $(".nav-category").css({ position: "relative", top: "0", width: "288px" });
   }
 });
