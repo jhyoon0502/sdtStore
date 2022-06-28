@@ -15,8 +15,17 @@ window.addEventListener("DOMContentLoaded", function () {
 
   const cateA = $(".cate-a");
   cateA.on("click", function () {
-    $(this).toggleClass("on");
-    $(this).not($(this)).removeClass("on");
+    function slideDown(target) {
+      slideUp();
+      $(target).addClass("on").next().show();
+    }
+    function slideUp() {
+      $(".cate-a").removeClass("on").next().hide();
+    }
+    $(this).hasClass("on") ? slideUp() : slideDown(this);
+
+    // $(this).toggleClass("on");
+    // $(this).not($(this)).removeClass("on");
 
     if ($(".cate-a").hasClass("on")) {
       $(this).next().css("display", "block");
