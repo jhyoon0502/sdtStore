@@ -81,6 +81,7 @@ header {
   display: flex;
   align-items: center;
   gap: 0 16px;
+  display: none;
 }
 .header-right > .my-wrap > .my > a {
   font-size: 14px;

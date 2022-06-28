@@ -46,13 +46,4 @@ window.addEventListener("scroll", function () {
   } else {
     $(".go-top").fadeOut();
   }
-
-  const bannerHeight = $(".banner-wrap").outerHeight();
-  const scrollVal = $(this).scrollTop();
-
-  if (scrollVal > bannerHeight) {
-    $(".nav-category").css({ position: "fixed", top: "114px", width: "288px" });
-  } else {
-    $(".nav-category").css({ position: "relative", top: "0", width: "288px" });
-  }
 });

@@ -1,0 +1,11 @@
+.all-wrap {
+  background-color: #ffffff;
+}
+.current-page-wrap {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.current-page-wrap img {
+  width: 24px;
+}

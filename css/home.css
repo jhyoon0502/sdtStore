@@ -1,3 +1,6 @@
+.all-wrap {
+  background-color: #f2f2f2;
+}
 .banner-wrap > ul > li {
   background-color: #312127;
 }
@@ -13,6 +16,8 @@
   padding: 56px 0 120px;
 }
 .categody-wrap > .nav-category-wrap > .nav-category {
+  position: sticky;
+  top: 114px;
   background-color: #ffffff;
   border: 1px solid #dedede;
   border-radius: 8px;
@@ -50,7 +55,8 @@
   right: 0;
   width: 24px;
   height: 24px;
-  background: url(../images/arrow-down.svg) no-repeat center / contain;
+  background: url(../images/category/nav/arrow-down.svg) no-repeat center /
+    contain;
 }
 .categody-wrap > .nav-category-wrap > .nav-category > ul > li > .cate-a.on {
   color: #251327;
@@ -62,7 +68,8 @@
   > ul
   > li
   > .cate-a.on::after {
-  background: url(../images/arrow-up.svg) no-repeat center / contain;
+  background: url(../images/category/nav/arrow-up.svg) no-repeat center /
+    contain;
 }
 .categody-wrap > .nav-category-wrap > .nav-category > ul > li .sub-menu-wrap {
   display: none;
