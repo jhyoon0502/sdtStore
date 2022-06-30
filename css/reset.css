@@ -22,9 +22,6 @@ ul,
 li {
   list-style: none;
 }
-article {
-  display: block;
-}
 a {
   display: block;
   text-decoration: none;

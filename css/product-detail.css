@@ -9,3 +9,20 @@
 .current-page-wrap img {
   width: 24px;
 }
+.product-wrap {
+  padding: 40px 0 120px;
+}
+.product-wrap > .title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.product-wrap > .sub {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #251327;
+}
+.product-wrap > .img-option-wrap {
+  display: grid;
+  grid-template-columns: 496px 1fr;
+  gap: 0 24px;
+}
