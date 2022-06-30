@@ -150,7 +150,6 @@
 }
 .con-wrap > .list-wrap > .result-text {
   font-size: 14px;
-  counter-reset: #3f4247;
   margin-bottom: 12px;
 }
 .con-wrap > .list-wrap > ul {
